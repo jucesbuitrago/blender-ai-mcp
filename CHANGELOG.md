@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v3.3.0 (2026-05-04)
+
+### Features
+
+- Ship guided quality gates and modularized guided scene runtime
+  ([#36](https://github.com/PatrykIti/blender-ai-mcp/pull/36),
+  [`3e85e61`](https://github.com/PatrykIti/blender-ai-mcp/commit/3e85e6105c879524132bc04a3e5dc9a5ce33b4a2))
+
+
 ## v3.2.0 (2026-05-04)
 
 ### Features
