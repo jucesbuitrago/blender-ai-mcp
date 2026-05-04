@@ -1,6 +1,6 @@
 # TASK-159: Modularize Oversized Guided Runtime And Scene Owner Files
 
-**Status:** ⏳ To Do
+**Status:** ✅ Done
 **Priority:** 🔴 High
 **Category:** Architecture / Maintainability
 **Estimated Effort:** Large
@@ -233,3 +233,20 @@ for owner_file in oversized_owner_files:
 - treat this as an internal follow-on that prepares the repo for the next
   spatial-intelligence and domain-expansion waves without changing product
   direction
+
+## Completion Summary
+
+Completed on 2026-05-04.
+
+- closed the remaining reference, scene MCP, and addon scene branches so the
+  oversized owner files are now split across explicit helper/mixin seams while
+  preserving the public MCP/addon/session contracts
+- finished the remaining `scene.py` extraction wave for spatial/view,
+  measure/assert, object-utility, and viewport ownership while keeping the file
+  as a stable, patchable MCP facade
+- finished the remaining addon measure/assert split, refreshed the runtime
+  inventory baseline for helper-module facades, and closed the late reference
+  gate/truth E2E drift uncovered during the final full-suite run
+- validated the umbrella with `poetry run pytest ./tests/unit` and the full
+  Blender-backed `poetry run python scripts/run_e2e_tests.py` runner outside
+  the sandbox

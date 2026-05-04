@@ -6,6 +6,21 @@ Project Change Log.
 
 | No. | Date | Title | Version |
 |-----|------|-------|---------|
+| [315](./315-2026-05-04-task-159-final-closeout.md) | 2026-05-04 | **TASK-159 final closeout** | - |
+| [314](./314-2026-05-04-task-159-reference-facade-guards.md) | 2026-05-04 | **TASK-159 reference facade guards** | - |
+| [313](./313-2026-05-04-task-159-scene-inspect-slice.md) | 2026-05-04 | **TASK-159 scene inspect slice** | - |
+| [312](./312-2026-05-04-task-159-scene-facade-guards.md) | 2026-05-04 | **TASK-159 scene facade guards** | - |
+| [311](./311-2026-05-04-task-159-reference-image-lifecycle-split.md) | 2026-05-04 | **TASK-159 reference image lifecycle split** | - |
+| [310](./310-2026-05-04-task-159-addon-scene-inspection-mixin.md) | 2026-05-04 | **TASK-159 addon scene inspection mixin** | - |
+| [309](./309-2026-05-04-task-159-addon-scene-structural-read-mixin.md) | 2026-05-04 | **TASK-159 addon scene structural-read mixin** | - |
+| [308](./308-2026-05-04-task-159-scene-create-configure-slice.md) | 2026-05-04 | **TASK-159 scene create/configure slice** | - |
+| [307](./307-2026-05-04-task-159-scene-structural-read-slice.md) | 2026-05-04 | **TASK-159 scene structural-read slice** | - |
+| [306](./306-2026-05-04-task-159-reference-current-view-compare-split.md) | 2026-05-04 | **TASK-159 reference current-view compare split** | - |
+| [305](./305-2026-05-04-task-159-addon-scene-lifecycle-context-mixin.md) | 2026-05-04 | **TASK-159 addon scene lifecycle/context mixin** | - |
+| [304](./304-2026-05-04-task-159-scene-context-state-read-slice.md) | 2026-05-04 | **TASK-159 scene context state-read slice** | - |
+| [303](./303-2026-05-04-task-159-addon-scene-world-render-mixin.md) | 2026-05-04 | **TASK-159 addon scene world/render mixin** | - |
+| [302](./302-2026-05-04-task-159-addon-scene-utility-mixins.md) | 2026-05-04 | **TASK-159 addon scene utility mixins** | - |
+| [301](./301-2026-05-04-task-159-session-capabilities-modularization.md) | 2026-05-04 | **TASK-159 session capabilities modularization** | - |
 | [300](./300-2026-05-04-task-160-guided-client-feedback-and-streamable-followup.md) | 2026-05-04 | **TASK-160 guided client feedback and Streamable follow-up** | - |
 | [299](./299-2026-05-03-task-157-scope-dedupe-and-compare-visibility-regressions.md) | 2026-05-03 | **TASK-157 scope, dedupe, and compare-visibility regressions** | - |
 | [298](./298-2026-05-03-task-157-goal-time-bounds-and-verifier-followups.md) | 2026-05-03 | **TASK-157 goal-time bounds and verifier follow-ups** | - |

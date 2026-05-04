@@ -1,7 +1,7 @@
 # TASK-159-03-03: Addon Scene Viewport, Camera, And Registration
 
 **Parent:** [TASK-159-03](./TASK-159-03_Addon_Scene_Handler_Modularization_And_Blender_Ownership_Boundaries.md)
-**Status:** ⏳ To Do
+**Status:** ✅ Done
 **Priority:** 🔴 High
 
 ## Objective
@@ -97,3 +97,13 @@ class SceneHandler(SceneViewportMixin, ...):
 - keep promoted tracking on parent `TASK-159`
 - keep world/render/color-management extraction on `TASK-159-03-05` so this
   leaf stays one focused viewport/runtime pass
+
+## Completion Summary
+
+Completed on 2026-05-04.
+
+- kept the landed viewport/camera split in
+  `blender_addon/application/handlers/scene_viewport_mixin.py`
+- closed the branch with the full repo unit lane and the full Blender-backed
+  E2E runner green, including viewport capture, named-camera, camera orbit, and
+  camera focus coverage
