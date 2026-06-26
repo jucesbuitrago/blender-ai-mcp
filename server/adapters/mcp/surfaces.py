@@ -21,6 +21,15 @@ from server.adapters.mcp.version_policy import (
     resolve_contract_line,
 )
 
+# Mandatory script-memory (RAG) directive injected on every write-capable surface.
+RAG_DIRECTIVE = (
+    "Eres un asistente de diseño paramétrico 3D. ANTES de escribir cualquier código de "
+    "Python nuevo, ESTÁS OBLIGADO a ejecutar la herramienta `buscar_referencias` para "
+    "comprobar si ya existe un script validado para esta geometría. Si encuentras uno, "
+    "reutilízalo o adáptalo en lugar de empezar de cero; cuando un script nuevo quede "
+    "validado, guárdalo con `guardar_script`."
+)
+
 SURFACE_PROFILES: dict[str, SurfaceProfileSettings] = {
     "legacy-manual": SurfaceProfileSettings(
         name="legacy-manual",
@@ -36,7 +45,8 @@ SURFACE_PROFILES: dict[str, SurfaceProfileSettings] = {
             "Router and workflow catalog tools are intentionally not exposed here. "
             "Goal-first is not required on this surface. "
             "Use direct scene, modeling, mesh, material, UV, collection, import/export, and inspection tools. "
-            "This is not the preferred production LLM path; if you want goal-first workflow/macro guidance, use llm-guided."
+            "This is not the preferred production LLM path; if you want goal-first workflow/macro guidance, use llm-guided. "
+            + RAG_DIRECTIVE
         ),
         delivery_mode="compatibility",
         default_contract_line=get_default_contract_line("legacy-manual"),
@@ -56,7 +66,8 @@ SURFACE_PROFILES: dict[str, SurfaceProfileSettings] = {
         instructions=(
             "Legacy compatibility/control surface. Broad public catalog including router and workflow tools. "
             "This surface is not the preferred long-term production LLM path. "
-            "If you use router/workflow capabilities here, start from router_set_goal first; otherwise treat this as a compatibility or maintainer-oriented surface."
+            "If you use router/workflow capabilities here, start from router_set_goal first; otherwise treat this as a compatibility or maintainer-oriented surface. "
+            + RAG_DIRECTIVE
         ),
         delivery_mode="compatibility",
         default_contract_line=get_default_contract_line("legacy-flat"),
@@ -98,7 +109,8 @@ SURFACE_PROFILES: dict[str, SurfaceProfileSettings] = {
             "If you want a manual non-router workflow, load the prompt 'manual_tools_no_router'. "
             "Verify meaningful changes with inspection and, when appropriate, before/after capture plus deterministic measure/assert tooling. "
             "This surface is task-capable: adopted heavy tools can run as background tasks with progress, "
-            "poll, cancel, and foreground fallback semantics."
+            "poll, cancel, and foreground fallback semantics. "
+            + RAG_DIRECTIVE
         ),
         delivery_mode="structured_first",
         search_enabled=True,

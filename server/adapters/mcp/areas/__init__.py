@@ -10,6 +10,7 @@ from .curve import register_curve_tools
 from .extraction import register_extraction_tools
 from .lattice import register_lattice_tools
 from .material import register_material_tools
+from .memory import register_memory_tools
 from .mesh import register_mesh_tools
 from .modeling import register_modeling_tools
 from .reference import register_reference_tools
@@ -29,6 +30,7 @@ __all__ = [
     "register_extraction_tools",
     "register_lattice_tools",
     "register_material_tools",
+    "register_memory_tools",
     "register_mesh_tools",
     "register_modeling_tools",
     "register_reference_tools",

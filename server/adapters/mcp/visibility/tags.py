@@ -97,6 +97,11 @@ CAPABILITY_TAGS: dict[str, tuple[str, ...]] = {
         AUDIENCE_LLM,
         ENTRY_GUIDED,
     ),
+    "memory": (
+        AUDIENCE_LEGACY,
+        AUDIENCE_LLM,
+        ENTRY_GUIDED,
+    ),
 }
 
 
@@ -122,6 +127,7 @@ CAPABILITY_PHASE_HINTS: dict[str, tuple[str, ...]] = {
     "extraction": capability_phase_tag(SessionPhase.INSPECT_VALIDATE),
     "router": capability_phase_tag(SessionPhase.PLANNING),
     "workflow_catalog": capability_phase_tag(SessionPhase.PLANNING),
+    "memory": capability_phase_tag(SessionPhase.PLANNING, SessionPhase.BUILD),
 }
 
 
